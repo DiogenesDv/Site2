@@ -1,0 +1,217 @@
+/*Antes comecar a desvolver o blog precisamos limpar as formataçoes 
+padroes do CSS com o codigo abaixo
+*/
+
+/*O * quer dizer (todos)*/
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+/*Pronto todos os magin e padding estarao por padrao com 0 em seus valores*/
+
+body
+{
+	font-size: 12px;/*tamanho da fonte*/
+	font-family: "Trebuchet MS", Helvetica, sans-serif;/*tipo da fonte*/
+	background: #a0a0a0;/*cor de fundo da pagina (cinza)*/
+
+}
+
+
+/************menu do site**************/
+/*Ids*/
+#navegacao
+{
+	background: #606060;/*cor de fundo da pagina (cinza escuro)*/
+	border-top: 2px solid #E0E0E0;	/*Cria uma borda de cor branca em cima do menu*/
+	border-bottom: 2px solid #E0E0E0;/*Cria uma borda de cor branca em baixo do menu*/
+	height: 45px;/*Cria uma altura de 45pixel no menu de navegacao*/
+}
+
+/*Cria se uma area dentro da barra de navegacao a cima para centralizar o nome do blo
+g e os itens de menu*/
+#area
+{
+	width: 780px;/*largura fixa*/
+	margin: 0 auto;/*Uma margem centralizada na 4 direcoes*/
+	/*border: 2px solid red;/*Uma borda apenas para facilitar a visualicao*/ 
+}
+
+#logo/*titulo Logo, define a posicao que ele ficara*/
+{
+	float: left;/* (direita)*/
+	padding: 8px;
+}
+
+#menu/*menu, define a posicao que ele ficara*/
+{
+	font-size: 15px;
+	float: right;/*(esquerda)*/
+	/*border: 2px solid #E0E0E0;/*Uma borda apenas para  a visualicao do menu*/ 
+	padding: 13px 6px;/*colocar 13px no top e battom e 6px na esqerda e direita, se quiser em todas direicoes do colocar apenas um valor*/
+}
+
+
+
+/******Formatacao do menu********/
+/* Usa - se tag "a" sem definicao para formatar todas os iten de menu de uma vez so*/
+a
+{
+	text-decoration: none;/*retira o onderline*/
+	padding: 8px;/*cria um espassamento de 5px em todas direcoes dentro de cada link*/
+}
+
+/*Links nao vizitados*/
+a:link
+{
+	color: #ffffff;/*cor dos links(branco antes de serem visitados)*/
+}
+
+/*Links vizitados*/
+a:visited
+{
+	color: #000000;/*cor dos links(ficara preto depois de visitados)*/
+}
+
+/*Links hover, (passando mouse)*/
+a:hover
+{
+	border-radius: 10px;/*cria uma borda arredondada*/
+	color: #404040;/*cor da fonte do link ao passar o mouse*/
+	background: #808080;/*cor do fundo do links ao passar o mouse*/
+}
+
+/*Links active, (enquando clicando)*/
+a:active
+{
+	color: #000000;/*cor da fonte do link ao tempo que estiver clicando no menu*/
+}
+
+/******************************/
+
+
+/*Classes*/
+.verde/*Definir a cor das 3 primeira letra do titulo como verde, porem coloquei branco*/
+{
+
+	color: #ffffff;/*Branco*/
+}
+
+
+
+/***************corpo do site*****************/
+/*Ids*/
+#area-principal
+{
+	border: 2px solid white; /*borda ao redor do corpo da pagina abaixo do menu*/
+	padding: 2px; /*espacamento dentro da borda*/
+	width: 700px;/*largura fixa*/
+	margin: 10px auto 10px auto;/*Uma margem no topo, direita, baixo e esquera*/
+	
+}
+
+#titulo
+{
+	text-decoration: underline;
+	color: #202020;
+}
+
+#postagem
+{
+	padding: 10px;
+	padding-top: 10px;
+	background: #ffffff;
+}
+
+#imagem
+{
+	float: left;
+	width: 230px;
+	height: 160px;
+	margin: 10px 10px 10px 0px;
+}
+
+#imagemEu
+{
+	float: left;
+	width: 230px;
+	height: 220px;
+	margin: 10px 10px 10px 0px;
+}
+
+#imagemPagAprend
+{
+	float: left;
+	width: 250px;
+	height: 200px;
+	margin: 10px 10px 10px 0px;
+}
+
+#imagem2PagAprend
+{
+	float: none;
+	width: 600px;
+	height: 400px;
+	margin: 10px 10px 10px 35px;
+}
+
+
+#imagemTrag
+{
+	float: left;
+	width: 400px;
+	height: 260px;
+	margin: 10px 10px 10px 10px;
+}
+
+#Site
+{
+	
+	border-radius: 40px;
+	color: #616161;
+}
+
+#conteudo
+{
+	color: #202020;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	margin: 10px 10px 10px 0px;
+
+}
+
+#conteudoMenuAprend
+{
+	color: #202020;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	margin: 10px 10px 10px 0px;
+
+}
+
+#rodape
+{
+	font-size: 10px;
+	text-align: center;
+}
+
+/*Classes*/
+.data-postagem
+{
+	font-size: 12px;
+	border-bottom: 1px solid #a0a0a0;
+	display: block;/*Faz com que a linha criada a cima fique  de um lado a outro, pois a tag span que ela esta em inline*/
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+
+}
+.postado
+{
+	border-left: 5px solid #a0a0a0;
+	padding-left: 5px;
+	display: block;
+	margin-top: 10px;
+}
+
